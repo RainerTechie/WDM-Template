@@ -98,7 +98,7 @@
     </ClCompile>
     <Link>
       <OutputFile>$(SolutionDir)build\$(ProjectName).sys</OutputFile>
-      <EntryPointSymbol>mainSYS</EntryPointSymbol>
+      <EntryPointSymbol>DriverEntry</EntryPointSymbol>
       <GenerateDebugInformation>false</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
@@ -114,7 +114,13 @@ rmdir /s /q "$(SolutionDir)build\$(ProjectName)"
     <FilesToPackage Include="$(TargetPath)" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="driver.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="driver.h" />
+    <ClInclude Include="messages.h" />
+    <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
