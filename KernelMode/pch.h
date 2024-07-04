@@ -1,6 +1,6 @@
 #pragma once
-#ifndef STDAFX_H
-#define STDAFX_H
+#ifndef PCH_H
+#define PCH_H
 
 ///////////////////////////////
 // LIBRARIES
@@ -21,4 +21,4 @@ extern "C" NTSTATUS NTAPI IoCreateDriver(_In_opt_ PUNICODE_STRING DriverName, _I
 ///////////////////////////////
 extern const WCHAR DRIVER_NAME[];
 
-#endif // !STDAFX_H
+#endif // !PCH_H

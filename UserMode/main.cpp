@@ -1,5 +1,5 @@
 #define CRT_SECURE_NO_WARNINGS
-#include <iostream>
+#include "stdafx.h"
 
 int main() {
 	std::cout << "============================" << std::endl;

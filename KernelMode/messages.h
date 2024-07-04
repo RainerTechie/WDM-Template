@@ -2,7 +2,7 @@
 #ifndef MESSAGES_H
 #define MESSAGES_H
 
-#include "stdafx.h"
+#include "pch.h"
 
 #define DebugMessage(Format, ...) DbgPrintEx(DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, Format, __VA_ARGS__)
 

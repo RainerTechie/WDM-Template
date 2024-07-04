@@ -4,10 +4,10 @@
 NTSTATUS DriverEntry(PDRIVER_OBJECT pDriverObject, PUNICODE_STRING pRegistryPath) {
 	if (!pDriverObject) {
 		// Normal mode Windows
-		return drv::NormalModeDriverEntry();
+		return drv::NMDriverEntry();
 	}
 	else { 
 		// Test mode windows
-		return drv::TestModeDriverEntry(pDriverObject, pRegistryPath);
+		return drv::TMDriverEntry(pDriverObject, pRegistryPath);
 	}
 }

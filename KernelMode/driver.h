@@ -2,13 +2,13 @@
 #ifndef DRIVER_H
 #define DRIVER_H
 
-#include "stdafx.h"
+#include "pch.h"
 
 class drv
 {
 public:
-	static NTSTATUS NormalModeDriverEntry();
-	static NTSTATUS TestModeDriverEntry(PDRIVER_OBJECT pDriverObject, PUNICODE_STRING pRegistryPath);
+	static NTSTATUS NMDriverEntry();
+	static NTSTATUS TMDriverEntry(PDRIVER_OBJECT pDriverObject, PUNICODE_STRING pRegistryPath);
 private:
 	static VOID DriverUnload(PDRIVER_OBJECT pDriverObject);
 	static NTSTATUS InitDriver(PDRIVER_OBJECT pDriverObject, PUNICODE_STRING pRegistryPath);

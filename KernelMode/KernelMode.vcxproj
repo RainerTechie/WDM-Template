@@ -120,7 +120,7 @@ rmdir /s /q "$(SolutionDir)build\$(ProjectName)"
   <ItemGroup>
     <ClInclude Include="driver.h" />
     <ClInclude Include="messages.h" />
-    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="pch.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
