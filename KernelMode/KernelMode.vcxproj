@@ -114,10 +114,12 @@ rmdir /s /q "$(SolutionDir)build\$(ProjectName)"
     <FilesToPackage Include="$(TargetPath)" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="comms.cpp" />
     <ClCompile Include="driver.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="comms.h" />
     <ClInclude Include="driver.h" />
     <ClInclude Include="messages.h" />
     <ClInclude Include="pch.h" />
