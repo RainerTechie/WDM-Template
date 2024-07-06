@@ -1,5 +1,6 @@
 # WDM-Template
 Windows Kernel driver configurated project for __inline functions (assembler), custom build configuration and debug configuration for not signed driver development (kdmapper...)
+*TO DO: Update readme images to last updated commit*
 
 ## Test Mode
 ![Test mode example](https://github.com/RainerTechie/WDM-Template/blob/main/readme/tesmode.PNG)
